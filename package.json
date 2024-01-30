@@ -1,0 +1,25 @@
+{
+  "name": "mi-aplicacion-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"npm run electron\" \"npm run react\" \"npm run express\"",
+    "electron": "electron dist-electron/main.js",
+    "react": "vite",
+    "express": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^28.2.0",
+    "vite": "^5.0.12"
+  },
+  "dependencies": {
+    "@npmcli/move-file": "^3.0.0",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.7"
+  }
+}
